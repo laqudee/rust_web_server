@@ -7,3 +7,17 @@
 ## Actix 的并发
 - 异步I/O：给定的OS原生线程在等待I/O时执行其他任务；例如侦听网络连接
 - 多线程并行：默认情况下启动OS原声线程的数量与系统逻辑CPU数量相同
+
+
+# 构建的内容
+
+POST A Course <---> Handler 1
+
+GET A Course <---> Handler 2
+
+GET all course for teacher <---> Handler 3
+
+## 具体
+- POST: /courses
+- GET: /courses/teacher_id
+- GET: /courses/teacher_id/course_id
