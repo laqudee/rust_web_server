@@ -21,3 +21,10 @@ GET all course for teacher <---> Handler 3
 - POST: /courses
 - GET: /courses/teacher_id
 - GET: /courses/teacher_id/course_id
+
+## Test
+
+```shell
+curl -x POST localhost:3000/courses/ -H "Content-Ty
+pe: application/json" -d '{"teacher_id":1, "name":"First course"}'
+```
