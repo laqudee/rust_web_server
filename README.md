@@ -28,3 +28,8 @@ GET all course for teacher <---> Handler 3
 curl -x POST localhost:3000/courses/ -H "Content-Ty
 pe: application/json" -d '{"teacher_id":1, "name":"First course"}'
 ```
+
+# 连接数据库
+
+- sqlx
+- PostgreSQL
