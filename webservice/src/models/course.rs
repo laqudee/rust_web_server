@@ -2,6 +2,8 @@ use actix_web::web;
 use chrono::NaiveDateTime;
 use serde::{Deserialize, Serialize};
 
+// use path
+// use crate::modles::course::Course;
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct Course {
     pub teacher_id: i32,

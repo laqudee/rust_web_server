@@ -11,11 +11,11 @@
 
 # 构建的内容
 
-POST A Course <---> Handler 1
+POST A Course <---> Handler 1 ---> db_access 1
 
-GET A Course <---> Handler 2
+GET A Course <---> Handler 2 ---> db_access 2
 
-GET all course for teacher <---> Handler 3
+GET all course for teacher <---> Handler 3 ---> db_access 3
 
 ## 具体
 - POST: /courses
