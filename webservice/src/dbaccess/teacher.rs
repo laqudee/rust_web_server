@@ -97,7 +97,7 @@ pub async fn update_teacher_details_db(
     };
 
     let update_row = sqlx::query!(
-        "UPDATE teacher SET name = $1, picture_url = $2, profile = $3 WHERE teacher_id = $4
+        "UPDATE teacher SET name = $1, picture_url = $2, profile = $3 WHERE id = $4
         RETURNING id, name, picture_url, profile",
         temp.name,
         temp.picture_url,
@@ -118,7 +118,7 @@ pub async fn update_teacher_details_db(
 }
 
 pub async fn delete_teacher_db(pool: &PgPool, teacher_id: i32) -> Result<String, MyError> {
-    let row = sqlx::query!(&format!("DELETE FROM teacher WHERE id = {}"), teacher_id)
+    let row = sqlx::query!("DELETE FROM teacher WHERE id = $1", teacher_id)
         .execute(pool)
         .await
         .map_err(|_err| MyError::DBError("Unable to delete teacher".into()))?;

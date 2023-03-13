@@ -1,7 +1,7 @@
 use actix_web::web;
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Deserialize, Serialize, Debug, Clone,)]
 pub struct Teacher {
     pub id: i32, // serial
     pub name: String,
