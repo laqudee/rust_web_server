@@ -75,3 +75,25 @@ pe: application/json" -d '{"teacher_id":1, "name":"First course"}'
 
 - actix-files：处理静态文件
 - awc：相当于一个http客户端
+
+# WebAssembly
+
+- 新的编码方式，可以在现代浏览器中运行
+  - 低级的类汇编语言
+  - 具有紧凑的二进制格式
+  - 可以接近原生的性能
+  - 并为C/C++，Rust提供一个编译目标
+  - 被设计为可与JS共存，一起工作
+
+- 文本格式
+- 二进制格式
+
+## WebAssembly可以做什么？
+
+- 把Rust编译为WebAssembly
+- 。。。
+
+- 快速，高效，可移植
+- 可读
+- 安全
+- 不破坏网络

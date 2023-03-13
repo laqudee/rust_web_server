@@ -1,5 +1,4 @@
 use crate::errors::MyError;
-use crate::handlers::teacher;
 use crate::models::teacher::{CreateTeacher, Teacher, UpdateTeacher};
 use sqlx::postgres::PgPool;
 
