@@ -68,3 +68,10 @@ pe: application/json" -d '{"teacher_id":1, "name":"First course"}'
 3. 为自定义错误类型实现ResponseError trait
 4. 在handler里返回自定义错误类型
 5. Actix会把错误转化为HTTP响应
+
+# Web App
+
+- 模板引擎：Tera
+
+- actix-files：处理静态文件
+- awc：相当于一个http客户端
