@@ -91,7 +91,6 @@ pe: application/json" -d '{"teacher_id":1, "name":"First course"}'
 ## WebAssembly可以做什么？
 
 - 把Rust编译为WebAssembly
-- 。。。
 
 - 快速，高效，可移植
 - 可读
